@@ -107,6 +107,12 @@ The ReLU function is calculated as follows:
 
     The Dying ReLU problem — when inputs approach zero, or are negative, the gradient of the function becomes zero, the network cannot perform backpropagation and cannot learn.
 
+**Why does Relu work?**
+
+[part 1](https://medium.com/analytics-vidhya/how-relu-works-f317a947bdc6)
+
+[part 2](https://medium.com/analytics-vidhya/how-does-relu-activation-work-part-2-8bb4feeb3b42)
+
 #### Leaky-ReLU Function
 
 ![L.RELU](https://miro.medium.com/max/1800/0*tf4m09jBicciHI-0.png)

@@ -51,3 +51,11 @@ Dropout is an approach to regularization in neural networks which helps to **red
 References:
 [bias and variance](https://ai.plainenglish.io/bias-and-variance-3290edd0850d)
 [regularization](https://towardsdatascience.com/l1-and-l2-regularization-methods-ce25e7fc831c)
+
+
+# Additional
+
+# Why L1 norm for sparse models?
+
+[check this explanation](https://stats.stackexchange.com/a/159379)
+
