@@ -199,6 +199,28 @@ Target values used to train a model with a linear activation function in the out
 
     Multilabel Classification: One node per class, sigmoid activation.
 
+## Multilabel
+
+Activation Function
+
+- The final score for each class should be independent of each other. Thus we can not apply softmax activation, because softmax converts the score into probabilities taking other scores into consideration.
+
+- The reason for the final score to be independent is obvious. If a movie genre is action, then it should not affect if the movie is thriller too.
+
+- We use the sigmoid activation function on the final layer. Sigmoid converts each score of the final node between 0 to 1 independent of what the other scores are.
+
+- If the score for some class is more than 0.5, the data is classified into that class. And there could be multiple classes having a score of more than 0.5 independently. Thus the data could be classified into multiple classes. Following is the code snippet for sigmoid activation.
+
+# Softmax Options
+
+Consider the following variants of Softmax:
+
+- Full Softmax is the Softmax we've been discussing; that is, Softmax calculates a probability for every possible class.
+
+- Candidate sampling means that Softmax calculates a probability for all the positive labels but only for a random sample of negative labels. For example, if we are interested in determining whether an input image is a beagle or a bloodhound, we don't have to provide probabilities for every non-doggy example.
+
+Full Softmax is fairly cheap when the number of classes is small but becomes prohibitively expensive when the number of classes climbs. Candidate sampling can improve efficiency in problems having a large number of classes.
+
 
 [Ref-1](https://xzz201920.medium.com/activation-functions-linear-non-linear-in-deep-learning-relu-sigmoid-softmax-swish-leaky-relu-a6333be712ea)
 [Ref-2](https://machinelearningmastery.com/choose-an-activation-function-for-deep-learning/)
