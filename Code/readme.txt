@@ -1,1 +1,1 @@
-NNDL Lab
+Neural Networks & Deep Learning Lab
